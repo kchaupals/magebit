@@ -1,17 +1,26 @@
 // Small devices
 
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 620px) {
+  main{
+    width:100%;
+  }
   .wrapper {
-    padding: 0;
+    padding: 0.625rem;
+  }
+  .bg img {
+    left: -17.563rem;
+  }
+}
+@media only screen and (min-width: 650px){
+  main{
+    margin: auto;
+    width: 45rem;
   }
 }
 
 @media only screen and (min-width: 800px) {
   html body {
     font-size: $font-default;
-    main{
-      width:100%;
-    }
   }
 
   html body main div.wrapper div.content h2.head {
