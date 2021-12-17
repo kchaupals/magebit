@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+html {
+  max-height: 100vh;
+  height: 100%;
+  font-size: 100%;
+  font-family: Arial;
+}
+
+body {
+  height: 100%;
+  font-size: 0.875rem;
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+  position: relative;
+  width: 42.5rem;
+}

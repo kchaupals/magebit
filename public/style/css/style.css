@@ -1,0 +1,642 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+html {
+  max-height: 100vh;
+  height: 100%;
+  font-size: 100%;
+  font-family: Arial;
+}
+
+body {
+  height: 100%;
+  font-size: 0.875rem;
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+  position: relative;
+  width: 42.5rem;
+}
+
+header {
+  background-color: white;
+  padding: 0 1.25rem;
+  height: 4.125rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .home .pine-logo {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 2.5rem;
+  padding-bottom: 0.32rem;
+}
+
+header .home .pine-text {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  display: none;
+}
+
+header ul.pine-nav li {
+  display: inline;
+}
+
+.pine-navlink {
+  padding-right: 1.0625rem;
+  display: inline;
+}
+
+.pine-navlink:last-child {
+  padding-right: 0;
+}
+
+.pine-navlink a:hover {
+  color: #4066a5 !important;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.pine-navlink a:active {
+  color: #233759 !important;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.25rem;
+  height: calc(100% - 4.125rem);
+}
+
+.wrapper .content-box {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #fff), color-stop(75%, #f2f5fa)) fixed;
+  background: linear-gradient(#fff 25%, #f2f5fa 75%) fixed;
+  padding: 2.063rem 1.25rem;
+}
+
+.wrapper .content-box .success {
+  padding: 0 0 2.375rem 1.438rem;
+  display: none;
+  position: relative;
+  top: 0.375rem;
+}
+
+.wrapper .content-box h2.head {
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #131821;
+  padding-bottom: 1.1rem;
+}
+
+.wrapper .content-box h2.success-h {
+  position: relative;
+  top: 1.5rem;
+}
+
+.wrapper .content-box h2.success-h span {
+  display: none;
+}
+
+.wrapper .content-box h2.success-h::after {
+  content: "Thanks for subscribing!";
+}
+
+.wrapper .content-box .after-head {
+  padding-bottom: 1.25rem;
+  line-height: 1.625rem;
+}
+
+.wrapper .content-box .success-p {
+  position: relative;
+  top: 1.313rem;
+  padding-bottom: 3.688rem;
+}
+
+.wrapper .content-box .success-p span {
+  display: none;
+}
+
+.wrapper .content-box .success-p::after {
+  content: "You have successfully subscribed to our email listing. Check your email for the discount code.";
+}
+
+.wrapper .content-box form.success-f {
+  display: none;
+}
+
+.wrapper .content-box form.box {
+  position: relative;
+}
+
+.wrapper .content-box form.box div.input {
+  position: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #e3e3e4;
+  background-color: #fff;
+  height: 3.75rem;
+  padding: 0 0.9rem 0 1.125rem;
+  margin-bottom: 1.09rem;
+}
+
+.wrapper .content-box form.box div.input input.i-box {
+  font-size: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  border: 0;
+  padding-top: 3px;
+}
+
+.wrapper .content-box form.box div.input input.i-box::-webkit-input-placeholder {
+  color: #6a707b;
+  font-weight: 400;
+}
+
+.wrapper .content-box form.box div.input input.i-box:-ms-input-placeholder {
+  color: #6a707b;
+  font-weight: 400;
+}
+
+.wrapper .content-box form.box div.input input.i-box::-ms-input-placeholder {
+  color: #6a707b;
+  font-weight: 400;
+}
+
+.wrapper .content-box form.box div.input input.i-box::placeholder {
+  color: #6a707b;
+  font-weight: 400;
+}
+
+.wrapper .content-box form.box div.input input.i-box:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.wrapper .content-box form.box div.input input.i-box:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.wrapper .content-box form.box div.input input.i-box:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.wrapper .content-box form.box div.input input.i-box:focus::placeholder {
+  color: transparent;
+}
+
+.wrapper .content-box form.box div.input .disabled-btn {
+  display: none;
+}
+
+.wrapper .content-box form.box div.input button.sub-btn {
+  font-size: 1.5rem;
+  color: #131821;
+  border: 0;
+  padding: 0;
+  background: 0;
+}
+
+.wrapper .content-box form.box div.input .pine-arrow {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.wrapper .content-box form.box div.input .pine-arrow:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.wrapper .content-box form.box div.input::before {
+  content: "";
+  position: absolute;
+  border-left: 4px solid #4066a5;
+  height: calc(100% + 0.125rem);
+  left: -0.063rem;
+  top: -0.063rem;
+}
+
+.wrapper .content-box form.box div.input:focus-within {
+  border: 1px solid #e3e3e4;
+  -webkit-box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .content-box form.box div.input:hover {
+  border: 1px solid #4066a5;
+  -webkit-box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .content-box form.box div.input:hover img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.wrapper .content-box form.box div.error-msg {
+  width: 100%;
+  padding-bottom: 1.3rem;
+}
+
+.wrapper .content-box form.box .err {
+  color: red;
+}
+
+.wrapper .content-box form.box .err::before {
+  content: "";
+  position: relative;
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  height: 1.5rem;
+  left: 2rem;
+  bottom: 0.625rem;
+}
+
+.wrapper .content-box form.box .terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: -1.313rem;
+}
+
+.wrapper .content-box form.box .terms input[type="checkbox"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1.6875rem;
+  height: 1.6875rem;
+  border: 1px solid #e3e3e4;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #fff;
+}
+
+.wrapper .content-box form.box .terms input[type="checkbox"]:checked {
+  background-color: #4066a5;
+}
+
+.wrapper .content-box form.box .terms input[type="checkbox"]:checked::before {
+  font-size: 1rem;
+  font-family: "B612 Mono", monospace;
+  content: "✓";
+}
+
+.wrapper .content-box form.box .terms label {
+  font-size: 1rem;
+  font-family: Arial;
+  position: relative;
+  left: 0.938rem;
+  top: 0.438rem;
+}
+
+.wrapper .content-box form.box .terms label a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: #000;
+}
+
+.wrapper .content-box form.box .terms label a:hover {
+  color: #4066a5;
+}
+
+.wrapper .content-box form.box .terms label a:focus {
+  color: #233759;
+}
+
+.wrapper .content-box hr {
+  border-bottom: 1px solid #e3e3e4;
+  margin-bottom: 1.3125rem;
+  border-style: ridge;
+}
+
+.wrapper .content-box .social-ic {
+  padding: 0 3rem 0 2.0625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.188rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.625rem;
+}
+
+.wrapper .content-box .social-ic .button {
+  display: inline-block;
+  width: 2.875rem;
+  height: 2.875rem;
+  margin: 0;
+  background: #f2f5fa;
+  border-radius: 50px;
+  color: rgba(106, 112, 123, 0.4);
+  cursor: pointer;
+}
+
+.wrapper .content-box .social-ic .button:hover {
+  width: 2.875rem;
+  color: #fff;
+}
+
+.wrapper .content-box .social-ic .button .icon {
+  display: inline-block;
+  width: 2.875rem;
+  height: 2.875rem;
+  text-align: center;
+  border-radius: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 500;
+  line-height: 2.875rem;
+  border: 2px solid #e3e3e4;
+}
+
+.wrapper .content-box .social-ic .button:nth-child(1):hover .icon {
+  background: #4267b2;
+  border: none;
+  -webkit-box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+          box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: #fff !important;
+}
+
+.wrapper .content-box .social-ic .button:nth-child(2):hover .icon {
+  background: #c13584;
+  border: none;
+  -webkit-box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+          box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: #fff !important;
+}
+
+.wrapper .content-box .social-ic .button:nth-child(3):hover .icon {
+  background: #1da1f2;
+  border: none;
+  -webkit-box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+          box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: #fff !important;
+}
+
+.wrapper .content-box .social-ic .button:nth-child(4):hover .icon {
+  background: #ff0000;
+  border: none;
+  -webkit-box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+          box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: #fff !important;
+}
+
+.wrapper .content-box .social-ic .button:nth-child(1):active .icon {
+  background: #2f4a80;
+  border: none;
+  -webkit-box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+          box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: #fff !important;
+}
+
+.wrapper .content-box .social-ic .button:nth-child(2):active .icon {
+  background: #8f2762;
+  border: none;
+  -webkit-box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+          box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: #fff !important;
+}
+
+.wrapper .content-box .social-ic .button:nth-child(3):active.icon {
+  background: #177fbf;
+  border: none;
+  -webkit-box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+          box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: #fff !important;
+}
+
+.wrapper .content-box .social-ic .button:nth-child(4):active .icon {
+  background: #cc0000;
+  border: none;
+  -webkit-box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+          box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: #fff !important;
+}
+
+.wrapper .content-box .social-ic .button .s-a {
+  text-decoration: none;
+  color: #6a707b;
+}
+
+.bg img {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 4.125rem;
+  z-index: -1;
+  position: absolute;
+  background-position: -281px, 0;
+  background-size: auto 100%;
+}
+
+@media only screen and (max-width: 330px) {
+  .wrapper {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  html body {
+    font-size: 1rem;
+  }
+  html body main {
+    width: 100%;
+  }
+  html body main div.wrapper div.content h2.head {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  html body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0.75rem;
+  }
+  html body main {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #fff), color-stop(75%, #f2f5fa)) fixed;
+    background: linear-gradient(#fff 25%, #f2f5fa 75%) fixed;
+  }
+  html body main header {
+    padding: 6.25rem 3rem 0 6.25rem;
+    height: auto;
+    width: 42.5rem;
+  }
+  html body main header .home .pine-text {
+    display: block;
+    padding: 1.125rem 0.813rem;
+  }
+  html body main header .pine-nav {
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #6a707b;
+    padding-right: 4.5rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  html body main header .pine-navlink {
+    padding-top: 0.5rem;
+    padding-left: 0;
+  }
+  html body main header .link2 {
+    position: relative;
+    left: 0.625rem;
+  }
+  html body main header .link3 {
+    position: relative;
+    left: 1.125rem;
+  }
+  html body main div.wrapper {
+    padding: 0;
+    height: calc(100% - 9.0625rem);
+  }
+  html body main div.wrapper .success-c {
+    position: relative;
+    top: -9.625rem;
+  }
+  html body main div.wrapper div.content-box {
+    background: 0;
+    padding: 5rem 0 0 8.75rem;
+  }
+  html body main div.wrapper div.content-box .success {
+    position: relative;
+    top: -0.2rem;
+    right: 1.5rem;
+  }
+  html body main div.wrapper div.content-box h2.head {
+    font-size: 2rem;
+    padding-bottom: 1.125rem;
+  }
+  html body main div.wrapper div.content-box p.after-head {
+    line-height: 1.8125rem;
+    font-size: 1rem;
+    max-width: 25rem;
+    padding-bottom: 3.0625rem;
+  }
+  html body main div.wrapper div.content-box .success-p {
+    top: 0.25rem;
+  }
+  html body main div.wrapper div.content-box .success-p::after {
+    white-space: pre;
+    content: "You have successfully subscribed to our email listing. \a Check your email for the discount code.";
+  }
+  html body main div.wrapper div.content-box .success-h {
+    position: relative;
+    top: -0.25rem;
+  }
+  html body main div.wrapper div.content-box form.box div.input {
+    height: 4.375rem;
+    width: 41.4375rem;
+    margin: 0 0 1.65625rem -2.5rem;
+  }
+  html body main div.wrapper div.content-box form.box div.input input.i-box {
+    padding-left: 1.62rem;
+    padding-top: 0;
+  }
+  html body main div.wrapper div.content-box form.box div.input button.sub-btn {
+    padding-right: 1.5625rem;
+  }
+  html body main div.wrapper div.content-box form.box div.error-msg {
+    padding-bottom: 1.9rem;
+    font-size: 0.875rem;
+  }
+  html body main div.wrapper div.content-box form.box div.terms {
+    padding-bottom: 3.125rem;
+  }
+  html body main div.wrapper div.content-box form.box div.terms input[type="checkbox"] {
+    position: relative;
+    top: 1.1rem;
+  }
+  html body main div.wrapper div.content-box form.box .ch-box-label {
+    font-size: 1rem;
+    position: relative;
+    top: 1.5rem;
+  }
+  html body main div.wrapper hr {
+    width: 25rem;
+    margin-bottom: 3.25rem;
+  }
+  html body main div.wrapper .social-ic {
+    gap: 1.2rem !important;
+    padding: 0 3rem 0 2.0625rem !important;
+    position: relative;
+    right: 3.8rem;
+    top: 1.5rem;
+  }
+  .bg img {
+    min-width: 31.25rem;
+    position: static;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
+    background-position-x: 0;
+    height: 100%;
+  }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (max-width: 1080px) {
+  .bg img {
+    background-position-x: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

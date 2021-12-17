@@ -1,0 +1,158 @@
+// Small devices
+
+@media only screen and (max-width: 330px) {
+  .wrapper {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  html body {
+    font-size: $font-default;
+    main{
+      width:100%;
+    }
+  }
+
+  html body main div.wrapper div.content h2.head {
+    font-size: $font-large;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  html body {
+    display: flex;
+    font-size: $small-font;
+
+    main {
+      background: linear-gradient($white 25%, $ltwhite 75%) fixed;
+
+      header {
+        padding: 6.25rem 3rem 0 6.25rem;
+        height: auto;
+        width: 42.5rem;
+
+        .home .pine-text {
+          display: block;
+          padding: 1.125rem 0.813rem;
+        }
+        .pine-nav {
+          font-family: Arial;
+          font-weight: 400;
+          font-size: $font-default;
+          color: $gray;
+          padding-right: 4.5rem;
+          justify-content: space-between;
+        }
+        .pine-navlink {
+          padding-top: 0.5rem;
+          padding-left: 0;
+        }
+        .link2 {
+          position: relative;
+          left: 0.625rem;
+        }
+        .link3 {
+          position: relative;
+          left: 1.125rem;
+        }
+      }
+      div.wrapper {
+        padding: 0;
+        height: calc(100% - 9.0625rem);
+        .success-c {
+          position: relative;
+          top: -9.625rem;
+        }
+        div.content-box {
+          background: 0;
+          padding: 5rem 0 0 8.75rem;
+
+          .success {
+            position: relative;
+            top: -0.2rem;
+            right: 1.5rem;
+          }
+          h2.head {
+            font-size: $font-large;
+            padding-bottom: 1.125rem;
+          }
+          p.after-head {
+            line-height: 1.8125rem;
+            font-size: $font-default;
+            max-width: 25rem;
+            padding-bottom: 3.0625rem;
+          }
+          .success-p {
+            top: 0.25rem;
+            &::after {
+              white-space: pre;
+              content: "You have successfully subscribed to our email listing. \a Check your email for the discount code.";
+            }
+          }
+          .success-h {
+            position: relative;
+            top: -0.25rem;
+          }
+
+          form.box {
+            div.input {
+              height: 4.375rem;
+              width: 41.4375rem;
+              margin: 0 0 1.65625rem -2.5rem;
+
+              input.i-box {
+                padding-left: 1.62rem;
+                padding-top: 0;
+              }
+
+              button.sub-btn {
+                padding-right: 1.5625rem;
+              }
+            }
+            div.error-msg {
+              padding-bottom: 1.9rem;
+              font-size: 0.875rem;
+            }
+            div.terms {
+              padding-bottom: 3.125rem;
+              input[type="checkbox"] {
+                position: relative;
+                top: 1.1rem;
+              }
+            }
+            .ch-box-label {
+              font-size: $font-default;
+              position: relative;
+              top: 1.5rem;
+            }
+          }
+        }
+        hr {
+          width: 25rem;
+          margin-bottom: 3.25rem;
+        }
+        .social-ic {
+          gap: 1.2rem !important;
+          padding: 0 3rem 0 2.0625rem !important;
+          position: relative;
+          right: 3.8rem;
+          top: 1.5rem;
+        }
+      }
+    }
+  }
+  .bg img {
+    min-width: 31.25rem;
+    position: static;
+    flex: 1 1;
+    background-position-x: 0;
+    height: 100%;
+  }
+}
+
+@media (min-aspect-ratio: 1/1) and (max-width: 1080px) {
+  .bg img {
+    background-position-x: 0;
+  }
+}

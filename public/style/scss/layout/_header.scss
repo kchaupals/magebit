@@ -1,0 +1,47 @@
+header {
+  background-color: white;
+  padding: 0 1.25rem;
+  height: 4.125rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .home {
+    display: flex;
+    .pine-logo {
+      box-sizing: content-box;
+      height: 2.5rem;
+      padding-bottom: 0.32rem;
+    }
+
+    .pine-text {
+      font-family: "Roboto", sans-serif;
+      color: $black;
+      font-size: 1.1rem;
+      line-height: 1rem;
+      display: none;
+    }
+  }
+  ul.pine-nav {
+    li {
+      display: inline;
+    }
+  }
+}
+.pine-navlink {
+  padding-right: 1.0625rem;
+  display: inline;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+.pine-navlink a:hover {
+  color: $blue !important;
+  text-decoration-line: underline;
+}
+.pine-navlink a:active {
+  color: $aclick_link !important;
+  text-decoration-line: underline;
+}
