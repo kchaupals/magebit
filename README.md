@@ -16,4 +16,10 @@ Database dump file -> *subs_db_dump.sql*
 
 Also if inserted in subdirectory, .htaccess file need to be updated with new root path
 
+# Pages 
+````
+Index-> - / or /index
+Database output-> /emails
+````
+
 If any questions occur, feel free to contact me
